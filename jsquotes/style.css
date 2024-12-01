@@ -1,0 +1,345 @@
+body{background-color: #000000;}
+
+ul {
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: block;
+  overflow: hidden;
+
+  background-color: #111111;
+}
+
+li {
+  float: left;
+}
+
+.navi {
+  display: block;
+  color:#d00101;
+  text-align: center;
+  padding: 1.3vw;
+  text-decoration: none;
+    
+    margin-left:auto;
+    margin-right:auto;
+    
+height:3.5vh;
+width: 100vw;
+  transition:background-color 30s, color 2s;
+}
+.navi:hover {
+  background-color: #17111f;
+  color:#771010;
+      transition:background-color .3s, color 2s;
+
+}
+
+.quotes-contain {
+    display:flex;
+    flex-direction:row; /* <*---Default, it's fine.*/
+
+    padding:21px;
+    justify-content:center;
+    overflow:hidden;
+}
+.stoicontainer {
+  display:flex;
+
+  flex-direction:column;
+  margin-right:1vw;
+}
+.epicontainer {
+  display:flex;
+
+  flex-direction:column;
+  margin-left:1vw;
+}
+
+.stoicolumn-one {
+    display:flex;
+    flex-direction:row;
+    max-height:fit-content;
+    min-height:fit-content;
+}
+.epicolumn-one {
+    display:flex;
+    flex-direction:row;
+    max-height:fit-content;
+    min-height:fit-content;
+}
+
+.stoicolumn-two {
+    display:flex;
+    flex-direction:row;
+    max-height:fit-content;
+    min-height:fit-content;
+}
+.epicolumn-two {
+    display:flex;
+    flex-direction:row;
+    max-height:fit-content;
+    min-height:fit-content;
+    
+    margin-left:102px; 
+}
+
+
+.quotes-contain > .stoicontainer > .stoicolumn-one > span {
+
+    margin:   1px;
+    color:#ffffff;
+
+    display:flex;
+    flex-direction:column;
+    position:relative;
+
+    width: 100px;
+    height:100px;
+}
+.quotes-contain > .stoicontainer > .stoicolumn-two > span {
+
+    margin: 1px;
+    
+    display:flex;
+    flex-direction:column;
+    position:relative;
+}
+.quotes-contain > .epicontainer > .epicolumn-one > span {
+
+    margin:   1px;
+
+    display:flex;
+    position:relative;
+        
+    width: 100px;
+    height:100px;
+}
+.quotes-contain > .epicontainer > .epicolumn-two > span {
+
+    margin: 1px;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    position:relative;
+}
+
+
+
+.stoicontainer > .stoicolumn-one > span > span {
+    color: #ffffff;
+
+    z-index: 1;
+    position:absolute;
+    text-align: center;
+    bottom:10px;
+    top:5px;
+    height: max-content;  
+    
+    padding:3px;
+    
+    scale:100%;
+    transition: z-index .1s;
+}
+.stoicontainer > .stoicolumn-one > span:hover {
+    scale:120%;
+    z-index: 2;
+
+}
+
+
+.stoicontainer > .stoicolumn-two > span > span {
+    color: #ffffff;
+    font-size:.65rem;
+
+    z-index: 1;
+    position:absolute;
+    text-align: center;
+    bottom:20px;
+    top:5px;
+    height: max-content;  
+    
+    padding:5px;
+    transition: ease-in-out;
+
+}
+.stoicontainer > .stoicolumn-two > span:hover {
+    scale:120%;
+    z-index:2;
+}
+
+button {
+  width: fit-content;
+  height: fit-content;
+  background-color: transparent;
+  border: none;
+  color:#ffffff;
+  opacity:0%;
+
+    z-index:1;
+
+  position:absolute;
+  bottom:5px;
+  left:0.75rem;
+  padding-top:75px;
+    
+    transition:opacity 1s;
+    transition-timing-function: ease-in;
+    transition-delay: 5s;
+}
+/* v EPICUREAN v */
+
+button:hover{
+    
+    opacity:50%
+    
+}
+
+.stoicontainer{
+font-size:.625rem;
+}
+.epicontainer{
+font-size:.625rem;
+}
+
+.epicontainer > .epicolumn-one > span > span {
+    color: #ffffff;
+    
+    z-index: 1;
+    position:absolute;
+    text-align: center;
+    bottom:30px;
+    top:5px;
+    height: max-content;  
+    scale:100%;
+    
+    padding-left:8px;
+    padding-right:8px;
+
+    transition: z-index .1s, scale 3s;
+    transition-timing-function: ease-in-out;
+}
+.epicontainer > .epicolumn-one > span:hover {
+    scale:120%;
+    z-index: 2;
+}
+
+
+.epicontainer > .epicolumn-two > span > span {
+    color: #ffffff;
+
+    z-index: 1;
+    position:absolute;
+    text-align: center;
+    bottom:30px;
+    top:5px;
+    height: max-content;  
+    
+    padding:1px;
+    transition: z-index .1s, scale 3s, ease-in-out;
+}
+.epicontainer > .epicolumn-two > span:hover {
+    scale:120%;
+    z-index: 2;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+/* IMAGES s
+ * 
+          */
+img {
+    display: block;
+    position:relative;
+    width: 100px;
+    height:100px;
+    background-color:transparent;
+    
+}
+
+ /* STOIC */
+ 
+
+
+ /* EPICUREAN */
+
+.text-one-container{
+    background-color: #111111;
+    padding-top:15px;
+    padding-left:35px;
+    padding-right:525px;
+    padding-bottom:15px;
+
+    min-width:fit-content;
+
+}
+.words{
+    opacity:100%;
+color: #505565;
+      transition: color 1.5s opacity 1.5s ease-in;
+}
+
+.text-one-container:hover{
+        background-color: #1b2065;
+    transition: background-color 3s ease-out;
+}
+
+.words:hover{
+        color: #883939;
+    transition: color 1s ease-out;
+
+}
+
+
+
+
+
+.shh{
+    background-color: transparent;
+    color:#17111f;
+    position:relative;
+    top:3px;
+    
+    font-size: 8px;
+    left:313px;
+    text-decoration: none;
+}
+
+.shh:hover{
+    color:#111111;
+    transition: color 2s;
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
